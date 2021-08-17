@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-active-color: #f3d228;
+  --main-p-border-color: #1e2125;
+  --main-background-color: #84d1e3;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+  box-sizing: border-box;
+}
+header nav {
+  width: 20rem;
+}
+header nav ol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ol li {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  list-style: none;
+  color: #ffffff;
+}
+header nav ol .active {
+  color: var(--main-active-color);
+}
+/* Section */
+.hero {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("./asets/BG-Frutas 1.png");
+  background-size: cover;
+  padding: 2rem 0;
+}
+.hero .logosContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero .logosContainer .nuevoSabor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+.hero .nuevosabor img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+.Vickys0733 {
+  z-index: 4;
+}
+.imAgen {
+  z-index: 5;
+  position: absolute;
+  top: 25%;
+}
+.hero .bebidasContainer {
+  display: flex;
+}
+.hero .bebidasContainer img {
+  object-fit: contain;
+}
+/* cards  */
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--main-background-color);
+  flex-wrap: wrap;
+}
+.cards .card {
+  border: 4px solid #000000;
+  border-radius: 20px 20px 20px 0;
+  width: 312px;
+  height: 302px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.cards .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cards .card .pContainer {
+  position: absolute;
+  width: 271px;
+  height: 111px;
+  left: 0;
+  bottom: 0;
+  background: var(--main-p-border-color);
+  border: 4px solid black;
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 1rem 0.5rem;
+}
+.cards .card p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
