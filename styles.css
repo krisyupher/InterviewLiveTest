@@ -7,6 +7,9 @@
   --main-p-border-color: #1e2125;
   --main-background-color: #84d1e3;
 }
+html {
+  overflow-x: hidden;
+}
 header {
   width: 100%;
   height: 80px;
@@ -93,9 +96,15 @@ header nav ol .active {
 }
 .hero .bebidasContainer {
   display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 400px;
 }
-.hero .bebidasContainer img {
+.hero .bebidasContainer .imgBebida {
   object-fit: contain;
+  margin-right: 30rem;
+  position: relative;
+  transition-duration: 1s;
 }
 /* cards  */
 .cards {
