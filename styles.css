@@ -53,6 +53,24 @@ header nav ol .active {
   align-items: center;
   flex-direction: column;
 }
+
+.hero .logosContainer .vickysLogo {
+  animation-name: vickysLogo;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  background: var(--main-background-color);
+  /*  animation-timing-function: ;
+  animation-fill-mode: ; */
+}
+@keyframes vickysLogo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
 .hero .logosContainer .nuevoSabor {
   display: flex;
   flex-direction: row;
